@@ -146,13 +146,13 @@ class Trainer:
         gen_b = Generator(img_chn=3, model_chn=64, n_resblock=9).to(device)
 
         dsc_a = Discriminator(
-            img_size=32, img_chn=3, model_chn=64,
+            img_size=128, img_chn=3, model_chn=64,
             n_downsample=7, n_resblock=0,
             fc_out=False, out_act=torch.nn.Sigmoid()
         ).to(device)
 
         dsc_b = Discriminator(
-            img_size=32, img_chn=3, model_chn=64,
+            img_size=128, img_chn=3, model_chn=64,
             n_downsample=7, n_resblock=0,
             fc_out=False, out_act=torch.nn.Sigmoid()
         ).to(device)
