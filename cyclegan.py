@@ -147,7 +147,7 @@ class Trainer:
 
         dsc_a = Discriminator(
             img_size=32, img_chn=3, model_chn=64,
-            n_downsample=5, n_resblock=0,
+            n_downsample=7, n_resblock=0,
             fc_out=False, out_act=torch.nn.Sigmoid()
         ).to(device)
 
